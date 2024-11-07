@@ -1,0 +1,179 @@
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  /* padding: 2rem; */
+  text-align: center;
+  overflow-x: hidden; 
+  height: 90%;
+}
+
+.password-input::-webkit-textfield-decoration-container {
+  display: none;
+}
+
+/* Hide the eye icon in Edge */
+.password-input::-ms-reveal {
+  display: none;
+}
+
+/* Hide the eye icon in Firefox */
+.password-input::-moz-textfield-decoration-container {
+  display: none;
+}
+
+
+/* Calendar part starts here */
+.react-calendar {
+  width: 100%;
+  background-color: transparent !important;
+  border: none !important;
+
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+.react-calendar__tile{
+  border-radius: 40px;
+}
+/* Remove borders and lines under day tiles */
+
+.react-calendar__tile--active {
+  background-color: #237104 !important;
+  color: #fff !important;
+  border-radius: 40px;
+}
+/* .react-calendar__tile:hover{
+  background: none !important;
+  color: black !important;
+} */
+.react-calendar__tile--now {
+  /* background-color: #43b018 !important; */
+  background-color: #43b018 !important;
+  color: #fff !important;
+  border-radius: 40px;
+}
+
+
+/* .react-calendar__tile:hover {
+  background-color: #f0fff4 !important;
+} */
+
+.custom-shadow {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.gradient{
+ background:  linear-gradient(180deg, #49FC04 0%, #226A05 100%);
+ transition: background 1s;
+}
+
+.hovergradient:hover{
+  background:linear-gradient(180deg, #49FC04 0%, #226A05 100%);
+  transition:  1s;
+
+
+}
+
+/* In your CSS file or inside a <style> tag */
+.scrollbar-hide {
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE and Edge */
+  -ms-overflow-style: none; /* IE and Edge */
+  /* Hide scrollbar for Firefox */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+/* Blink animation */
+.smooth-blink {
+  animation: smooth-blink-animation 1.5s ease-in-out infinite;
+}
+
+/* Keyframes for smooth blink effect */
+@keyframes smooth-blink-animation {
+  0%, 49% {
+    opacity: 1; /* Fully visible */
+  }
+  50%, 100% {
+    opacity: 0.3; /* Fully invisible */
+  }
+}
+
+.react-calendar__navigation__prev2-button,
+.react-calendar__navigation__next2-button {
+  display: none; /* Hide double arrow buttons */
+}
+
+
+
+.react-calendar__navigation__label{
+  background: transparent !important;
+}
+
+
+.react-calendar__navigation__label:hover {
+  background: white !important; /* Darker green on hover */
+}
+
+/* Customize the dropdown options for month selection */
+
+/* Customize the selected date styling */
+.react-calendar__tile{
+  padding: 6px !important;
+  /* background: transparent !important; */
+margin-top: 5px !important;
+
+}
+
+.react-calendar__navigation__label {
+
+  font-weight: bold;
+}
+
+/* Remove dotted lines under the day labels */
+.react-calendar__month-view__weekdays__weekday {
+  text-decoration: none !important;
+  border: none !important;
+}
+
+
+/* days underlines removed */
+.react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* aroow background removed */
+.react-calendar__navigation button {
+  background: transparent !important;
+  border: none;
+}
+@media(max-width:700px){
+  .react-calendar__tile{
+   
+  font-size: 10px !important;
+  
+  }
+}
+
+
+
+/* Blink animation */
+.text-blink {
+  animation: text-blink-animation 2s ease-in-out infinite;
+}
+
+/* Keyframes for smooth blink effect */
+@keyframes text-blink-animation {
+  0%, 49% {
+    color:  rgb(20, 175, 20); /* Fully visible */
+  }
+  50%, 100% {
+    color: rgb(249, 61, 61);
+  
+  }
+}
+
+
+
