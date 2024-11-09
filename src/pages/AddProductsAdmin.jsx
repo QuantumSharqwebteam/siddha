@@ -14,7 +14,7 @@ import "primereact/resources/themes/saga-blue/theme.css"; // Theme
 import "primereact/resources/primereact.min.css"; // Core Styles
 
 // Upload image and generate link in aws
-import { s3Client } from "../utilities/aws/awsconfig";
+// import { s3Client } from "../utilities/aws/awsconfig";
 import { PutObjectCommand } from "@aws-sdk/client-s3";
 import { FaPlus } from 'react-icons/fa6';
 
